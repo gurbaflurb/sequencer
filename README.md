@@ -29,4 +29,4 @@ Seeds used:
 
 Rounds used: 10000
 
-In general, if you run a long enough sequence, Bob will eventually win by a hair. Smaller sequences, appear to be more 50/50. Even at 1000 rounds of 1000 coin flips each, the results still appeared to be 50/50. It wasn't until after the 10,000 rounds  
+In general, if you run a long enough sequence, Bob will generally win by a small amount. In smaller sequences, things appear to be more 50/50, however Bob tends to pull ahead in general if you look at hundreds or thousands of rounds.

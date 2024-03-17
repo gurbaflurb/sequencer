@@ -89,10 +89,10 @@ def main(args):
     print(f'Using initial seed value of: {args.seed}')
 
     sequences = []
-    seeds = gen_seeds(args.seed, args.rounds)
+    seeds = gen_seeds(args.seed, args.iterations)
 
     print('Flipping coins...')
-    for i in tqdm(range(0, args.rounds)):
+    for i in tqdm(range(0, args.iterations)):
         sequences.append(run_sequence(seeds[i], args.rounds))
 
     average_alice, average_bob, winner = beeg_analyzer(sequences)
@@ -106,5 +106,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser()
     p.add_argument('-s', '--seed', type=str, default=base64.b64encode(get_random_bytes(16)).decode('UTF-8'), help='Input a given seed to test or verify results with.')
     p.add_argument('-r', '--rounds', type=int, default=100, help='Change the number of rounds being used per sequence')
+    p.add_argument('-i', '--iterations', type=int, default=100, help='Change the number of iterations being used')
     args = p.parse_args()
     main(args)
