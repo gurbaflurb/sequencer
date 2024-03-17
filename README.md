@@ -17,3 +17,16 @@ Poll results are (as of 1735 UTC 17 MARCH 2024):
 ## According to Reddit:
 https://www.reddit.com/r/theydidthemath/comments/1bgnbnt/comment/kv8x4lu/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 - Tl;dr Bob will end with more points than Alice on average. 
+
+## Conclusion
+Running many tests, it would appear that Bob, generally, over many, many, many rounds, wins slightly more than Alice.
+
+Seeds used:
+- 35tm9fSLfSjrKBAxA80hYw==
+- U8N/tZPzaIDc5GndaxwhQQ==
+- 45mcfKVQN7enjVjU46MCqg==
+- yZ1nrZNY8hFP0J6+JJ0+eg==
+
+Rounds used: 10000
+
+In general, if you run a long enough sequence, Bob will eventually win by a hair. Smaller sequences, appear to be more 50/50. Even at 1000 rounds of 1000 coin flips each, the results still appeared to be 50/50. It wasn't until after the 10,000 rounds  
